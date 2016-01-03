@@ -1,4 +1,4 @@
-
+'use strict'; /*jslint node: true, es5: true, indent: 2 */
 var Redis = require('ioredis');
 
 Redis.Promise.onPossiblyUnhandledRejection(function (error) {
