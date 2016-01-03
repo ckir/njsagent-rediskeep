@@ -1,0 +1,25 @@
+{
+  "name": "njsagent-rediskeep",
+  "version": "1.0.0",
+  "description": "Prevent rediscloud from being unused and reclaimed",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckir/njsagent-rediskeep.git"
+  },
+  "keywords": [
+    "njsagent"
+  ],
+  "author": "Costas Kirgoussios <ckir1508@hotmail.com> (http://gr.linkedin.com/in/ckirgoussios/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ckir/njsagent-rediskeep/issues"
+  },
+  "homepage": "https://github.com/ckir/njsagent-rediskeep#readme",
+  "dependencies": {
+    "ioredis": "^1.13.2"
+  }
+}
