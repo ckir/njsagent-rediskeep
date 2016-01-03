@@ -9,12 +9,12 @@ Redis.Promise.onPossiblyUnhandledRejection(function (error) {
 });
 
 if (process.env.REDISCLOUD_URL) {
-	console.log('Connecting to ' + process.env.REDISCLOUD_URL);
 	var redis = new Redis(process.env.REDISCLOUD_URL);
 } else {
-	console.log('Connecting to redis://local:123456@localhost:6379');
 	var redis = new Redis('redis://local:123456@localhost:6379');	
 }
+
+console.log('Connected to redis');
 
 redis.lpush('njsagent-rediskeep', Date.now()).then(function(){
 	console.log('Wrote current timestamp');
